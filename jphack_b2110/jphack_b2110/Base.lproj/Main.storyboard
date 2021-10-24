@@ -30,7 +30,20 @@
                                     </attributedString>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="Camera:" destination="VkW-xa-3sG" eventType="touchUpInside" id="zVW-iJ-bNl"/>
                                     <segue destination="Itr-I9-DYi" kind="show" id="XzX-0e-sQO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="goq-dr-5s5">
+                                <rect key="frame" x="168" y="616" width="54" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <buttonConfiguration key="configuration" style="tinted">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Data"/>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="CameraBotton:" destination="VkW-xa-3sG" eventType="touchUpInside" id="nCd-hO-0BJ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -46,6 +59,7 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="VkW-xa-3sG" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="29" y="257"/>
         </scene>
