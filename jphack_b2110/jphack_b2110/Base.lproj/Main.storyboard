@@ -73,17 +73,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="カメラ画面" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pC2-s8-c3Z">
-                                <rect key="frame" x="121" y="100" width="184" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="6U6-Yl-wLh"/>
-                                    <constraint firstAttribute="width" constant="100" id="COs-tu-Kby"/>
-                                    <constraint firstAttribute="height" constant="80" id="XjV-7c-bJc"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egs-b3-FqQ">
                                 <rect key="frame" x="22" y="47" width="56" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -93,6 +82,17 @@
                                     <segue destination="PO0-Ph-omg" kind="show" id="0Go-mY-Jqn"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="カメラ画面" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pC2-s8-c3Z">
+                                <rect key="frame" x="120" y="47" width="184" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="6U6-Yl-wLh"/>
+                                    <constraint firstAttribute="width" constant="100" id="COs-tu-Kby"/>
+                                    <constraint firstAttribute="height" constant="80" id="XjV-7c-bJc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
@@ -131,7 +131,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="back"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="m4Z-V3-OlZ"/>
+                                    <segue destination="PO0-Ph-omg" kind="show" id="EK0-mp-SXW"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -152,7 +152,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="XdQ-tO-iia"/>
+        <segue reference="0Go-mY-Jqn"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
