@@ -83,8 +83,8 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     }
     /// UIImagePickerController カメラを起動する
     /// - Parameter sender: "UIImagePickerController"ボタン
+
     @IBAction func CameraBotton(_ sender: Any) {
-        
     }
     
     @IBAction func Camera(_ sender: UIButton) {
