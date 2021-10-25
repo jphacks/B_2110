@@ -15,6 +15,10 @@
 		6E086DEF2723EF06007208EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E086DED2723EF06007208EB /* Main.storyboard */; };
 		6E086DF12723EF0A007208EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E086DF02723EF0A007208EB /* Assets.xcassets */; };
 		6E086DF42723EF0A007208EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E086DF22723EF0A007208EB /* LaunchScreen.storyboard */; };
+		A72D36572726D7C600019A76 /* ikePiyo.gif in Resources */ = {isa = PBXBuildFile; fileRef = A72D36562726D7C500019A76 /* ikePiyo.gif */; };
+		A72D36592726D89200019A76 /* gifLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72D36582726D89200019A76 /* gifLoad.swift */; };
+		A72D365B2726DB7600019A76 /* yasePiyo.gif in Resources */ = {isa = PBXBuildFile; fileRef = A72D365A2726DB7600019A76 /* yasePiyo.gif */; };
+		A72D365D2726DB7E00019A76 /* pochaPiyo.gif in Resources */ = {isa = PBXBuildFile; fileRef = A72D365C2726DB7E00019A76 /* pochaPiyo.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		6E086DF02723EF0A007208EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E086DF32723EF0A007208EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E086DF52723EF0A007208EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A72D36562726D7C500019A76 /* ikePiyo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ikePiyo.gif; sourceTree = "<group>"; };
+		A72D36582726D89200019A76 /* gifLoad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = gifLoad.swift; sourceTree = "<group>"; };
+		A72D365A2726DB7600019A76 /* yasePiyo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = yasePiyo.gif; sourceTree = "<group>"; };
+		A72D365C2726DB7E00019A76 /* pochaPiyo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = pochaPiyo.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,8 +73,12 @@
 				6E086DE72723EF06007208EB /* AppDelegate.swift */,
 				6E086DE92723EF06007208EB /* SceneDelegate.swift */,
 				6E086DEB2723EF06007208EB /* ViewController.swift */,
+				A72D36582726D89200019A76 /* gifLoad.swift */,
 				6E086DED2723EF06007208EB /* Main.storyboard */,
 				6E086DF02723EF0A007208EB /* Assets.xcassets */,
+				A72D36562726D7C500019A76 /* ikePiyo.gif */,
+				A72D365A2726DB7600019A76 /* yasePiyo.gif */,
+				A72D365C2726DB7E00019A76 /* pochaPiyo.gif */,
 				6E086DF22723EF0A007208EB /* LaunchScreen.storyboard */,
 				6E086DF52723EF0A007208EB /* Info.plist */,
 			);
@@ -131,7 +143,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A72D365B2726DB7600019A76 /* yasePiyo.gif in Resources */,
 				6E086DF42723EF0A007208EB /* LaunchScreen.storyboard in Resources */,
+				A72D36572726D7C600019A76 /* ikePiyo.gif in Resources */,
+				A72D365D2726DB7E00019A76 /* pochaPiyo.gif in Resources */,
 				6E086DF12723EF0A007208EB /* Assets.xcassets in Resources */,
 				6E086DEF2723EF06007208EB /* Main.storyboard in Resources */,
 			);
@@ -146,6 +161,7 @@
 			files = (
 				6E086DEC2723EF06007208EB /* ViewController.swift in Sources */,
 				179DC7052725558400F11D46 /* CharacterViewController.swift in Sources */,
+				A72D36592726D89200019A76 /* gifLoad.swift in Sources */,
 				179DC69127250C3900F11D46 /* CameraViewController.swift in Sources */,
 				6E086DE82723EF06007208EB /* AppDelegate.swift in Sources */,
 				6E086DEA2723EF06007208EB /* SceneDelegate.swift in Sources */,
