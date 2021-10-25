@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PO0-Ph-omg">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
@@ -9,24 +9,31 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="jJ3-JT-Agv">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="jphack_b2110" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                <viewController id="PO0-Ph-omg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tuf-PP-rAl">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="アプリ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRi-5r-SOd">
-                                <rect key="frame" x="149.66666666666666" y="144" width="91" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ホーム画面" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jV0-6K-eHL">
+                                <rect key="frame" x="151.66666666666666" y="100" width="86.666666666666657" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KWs-pc-9fI">
-                                <rect key="frame" x="168" y="679" width="54" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KWs-pc-9fI">
+                                <rect key="frame" x="40" y="692" width="96" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <buttonConfiguration key="configuration" style="tinted">
                                     <attributedString key="attributedTitle">
-                                        <fragment content="Data"/>
+                                        <fragment content="データ詳細へ">
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="12" name="HiraginoSans-W3"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
                                     </attributedString>
                                 </buttonConfiguration>
                                 <connections>
@@ -34,34 +41,72 @@
                                     <segue destination="Itr-I9-DYi" kind="show" id="XzX-0e-sQO"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="goq-dr-5s5">
-                                <rect key="frame" x="168" y="616" width="54" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x74-5l-VcZ">
+                                <rect key="frame" x="141" y="692" width="110" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <buttonConfiguration key="configuration" style="tinted">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Data"/>
-                                    </attributedString>
-                                </buttonConfiguration>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="カメラ画面へ"/>
                                 <connections>
-                                    <action selector="CameraBotton:" destination="VkW-xa-3sG" eventType="touchUpInside" id="nCd-hO-0BJ"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="XdQ-tO-iia"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qMh-0m-FRD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jV0-6K-eHL" firstAttribute="centerX" secondItem="Tuf-PP-rAl" secondAttribute="centerX" id="83z-ad-fXh"/>
+                            <constraint firstItem="jV0-6K-eHL" firstAttribute="top" secondItem="qMh-0m-FRD" secondAttribute="top" constant="100" id="bhG-QX-sAb"/>
+                            <constraint firstItem="jV0-6K-eHL" firstAttribute="centerX" secondItem="Tuf-PP-rAl" secondAttribute="centerX" id="h15-Q4-6Kl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="vuI-fc-xdN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YsZ-cv-Jrj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-963.07692307692309" y="273.69668246445497"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="jphack_b2110" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="カメラ画面" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pC2-s8-c3Z">
+                                <rect key="frame" x="121" y="100" width="184" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="6U6-Yl-wLh"/>
+                                    <constraint firstAttribute="width" constant="100" id="COs-tu-Kby"/>
+                                    <constraint firstAttribute="height" constant="80" id="XjV-7c-bJc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egs-b3-FqQ">
+                                <rect key="frame" x="22" y="47" width="56" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="back"/>
+                                <connections>
+                                    <segue destination="PO0-Ph-omg" kind="show" id="0Go-mY-Jqn"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KWs-pc-9fI" secondAttribute="bottom" constant="100" id="P4v-fl-6WQ"/>
-                            <constraint firstItem="KWs-pc-9fI" firstAttribute="centerX" secondItem="dRi-5r-SOd" secondAttribute="centerX" id="SF9-J2-toE"/>
-                            <constraint firstItem="dRi-5r-SOd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="Ta0-s0-HFh"/>
-                            <constraint firstItem="dRi-5r-SOd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YB3-nO-zvD"/>
-                            <constraint firstItem="KWs-pc-9fI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="168" id="qpH-tv-LfR"/>
+                            <constraint firstItem="pC2-s8-c3Z" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="EQs-AF-i2l"/>
+                            <constraint firstItem="pC2-s8-c3Z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UEx-3V-J0z"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="PCg-Fv-f5W"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <exit id="VkW-xa-3sG" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="29" y="257"/>
+            <point key="canvasLocation" x="-118.46153846153845" y="-90.284360189573462"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Xny-KQ-HNL">
@@ -72,11 +117,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="データ詳細" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLV-0v-pcr">
-                                <rect key="frame" x="152" y="145" width="87" height="21"/>
+                                <rect key="frame" x="152" y="97" width="87" height="21"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQn-6Q-TwX">
+                                <rect key="frame" x="16" y="37" width="70" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4Ky-Rp-lom"/>
+                                    <constraint firstAttribute="width" constant="70" id="OHw-HK-o9H"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="m4Z-V3-OlZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="geM-DL-w88"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
@@ -91,10 +148,16 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nty-fm-tA6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="934" y="274"/>
+            <point key="canvasLocation" x="933.84615384615381" y="273.69668246445497"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="XdQ-tO-iia"/>
+    </inferredMetricsTieBreakers>
     <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
