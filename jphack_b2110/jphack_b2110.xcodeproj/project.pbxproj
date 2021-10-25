@@ -19,6 +19,13 @@
 		A72D36592726D89200019A76 /* gifLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72D36582726D89200019A76 /* gifLoad.swift */; };
 		A72D365B2726DB7600019A76 /* yasePiyo.gif in Resources */ = {isa = PBXBuildFile; fileRef = A72D365A2726DB7600019A76 /* yasePiyo.gif */; };
 		A72D365D2726DB7E00019A76 /* pochaPiyo.gif in Resources */ = {isa = PBXBuildFile; fileRef = A72D365C2726DB7E00019A76 /* pochaPiyo.gif */; };
+		A72D365F2726DE0E00019A76 /* misaki_gothic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A72D365E2726DE0E00019A76 /* misaki_gothic.ttf */; };
+		A72D36612726E58500019A76 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = A72D36602726E58500019A76 /* background.png */; };
+		A72D36672726EF1100019A76 /* hukidashi2.png in Resources */ = {isa = PBXBuildFile; fileRef = A72D36662726EF1100019A76 /* hukidashi2.png */; };
+		A72D36692726FA9F00019A76 /* background3.png in Resources */ = {isa = PBXBuildFile; fileRef = A72D36682726FA9F00019A76 /* background3.png */; };
+		A72D366B2727029C00019A76 /* hukidashi3.png in Resources */ = {isa = PBXBuildFile; fileRef = A72D366A2727029C00019A76 /* hukidashi3.png */; };
+		A72D366D272704B400019A76 /* parameter.png in Resources */ = {isa = PBXBuildFile; fileRef = A72D366C272704B400019A76 /* parameter.png */; };
+		A72D366F2727099A00019A76 /* parameter2.png in Resources */ = {isa = PBXBuildFile; fileRef = A72D366E2727099A00019A76 /* parameter2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +43,13 @@
 		A72D36582726D89200019A76 /* gifLoad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = gifLoad.swift; sourceTree = "<group>"; };
 		A72D365A2726DB7600019A76 /* yasePiyo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = yasePiyo.gif; sourceTree = "<group>"; };
 		A72D365C2726DB7E00019A76 /* pochaPiyo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = pochaPiyo.gif; sourceTree = "<group>"; };
+		A72D365E2726DE0E00019A76 /* misaki_gothic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = misaki_gothic.ttf; sourceTree = "<group>"; };
+		A72D36602726E58500019A76 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		A72D36662726EF1100019A76 /* hukidashi2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hukidashi2.png; sourceTree = "<group>"; };
+		A72D36682726FA9F00019A76 /* background3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background3.png; sourceTree = "<group>"; };
+		A72D366A2727029C00019A76 /* hukidashi3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hukidashi3.png; sourceTree = "<group>"; };
+		A72D366C272704B400019A76 /* parameter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = parameter.png; sourceTree = "<group>"; };
+		A72D366E2727099A00019A76 /* parameter2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = parameter2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +93,13 @@
 				A72D36562726D7C500019A76 /* ikePiyo.gif */,
 				A72D365A2726DB7600019A76 /* yasePiyo.gif */,
 				A72D365C2726DB7E00019A76 /* pochaPiyo.gif */,
+				A72D36602726E58500019A76 /* background.png */,
+				A72D36662726EF1100019A76 /* hukidashi2.png */,
+				A72D36682726FA9F00019A76 /* background3.png */,
+				A72D366A2727029C00019A76 /* hukidashi3.png */,
+				A72D366C272704B400019A76 /* parameter.png */,
+				A72D366E2727099A00019A76 /* parameter2.png */,
+				A72D365E2726DE0E00019A76 /* misaki_gothic.ttf */,
 				6E086DF22723EF0A007208EB /* LaunchScreen.storyboard */,
 				6E086DF52723EF0A007208EB /* Info.plist */,
 			);
@@ -144,11 +165,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				A72D365B2726DB7600019A76 /* yasePiyo.gif in Resources */,
+				A72D36692726FA9F00019A76 /* background3.png in Resources */,
+				A72D36612726E58500019A76 /* background.png in Resources */,
+				A72D366B2727029C00019A76 /* hukidashi3.png in Resources */,
+				A72D366F2727099A00019A76 /* parameter2.png in Resources */,
+				A72D365F2726DE0E00019A76 /* misaki_gothic.ttf in Resources */,
+				A72D366D272704B400019A76 /* parameter.png in Resources */,
 				6E086DF42723EF0A007208EB /* LaunchScreen.storyboard in Resources */,
 				A72D36572726D7C600019A76 /* ikePiyo.gif in Resources */,
 				A72D365D2726DB7E00019A76 /* pochaPiyo.gif in Resources */,
 				6E086DF12723EF0A007208EB /* Assets.xcassets in Resources */,
 				6E086DEF2723EF06007208EB /* Main.storyboard in Resources */,
+				A72D36672726EF1100019A76 /* hukidashi2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

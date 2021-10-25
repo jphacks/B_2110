@@ -7,6 +7,11 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="misaki_gothic.ttf">
+            <string>MisakiGothic</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Tab Bar Controller-->
         <scene sceneID="US7-YM-IFR">
@@ -15,7 +20,9 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XKM-Kc-W54">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <color key="barTintColor" systemColor="systemGray6Color"/>
+                        <color key="selectedImageTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="nAY-7D-rfv" kind="relationship" relationship="viewControllers" id="VXf-Nk-dDx"/>
@@ -71,13 +78,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zV9-D9-8U2">
-                                <rect key="frame" x="75" y="222" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background3.png" translatesAutoresizingMaskIntoConstraints="NO" id="jbn-zD-Ej0">
+                                <rect key="frame" x="0.0" y="88" width="390" height="673"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zV9-D9-8U2">
+                                <rect key="frame" x="105" y="269.66666666666669" width="180" height="184.66666666666669"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="180" id="ANE-5P-2Nu"/>
+                                    <constraint firstAttribute="width" constant="180" id="Ejz-S2-JFv"/>
+                                    <constraint firstAttribute="height" constant="184.66999999999999" id="Gjq-dF-HnZ"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hukidashi3.png" translatesAutoresizingMaskIntoConstraints="NO" id="MsL-cl-gFL">
+                                <rect key="frame" x="50" y="138" width="290" height="71.666666666666686"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71.670000000000002" id="31l-9H-dq9"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="parameter2.png" translatesAutoresizingMaskIntoConstraints="NO" id="i9t-It-13E">
+                                <rect key="frame" x="30" y="484.33333333333331" width="330" height="236.66666666666669"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="草足りない!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K2P-j1-mqs">
+                                <rect key="frame" x="140" y="158" width="110" height="20"/>
+                                <fontDescription key="fontDescription" name="MisakiGothic" family="MisakiGothic" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MsL-cl-gFL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="7je-o6-0PX"/>
+                            <constraint firstItem="zV9-D9-8U2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-60" id="8aw-F8-sGv"/>
+                            <constraint firstItem="jbn-zD-Ej0" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="9LX-nx-hkU"/>
+                            <constraint firstItem="i9t-It-13E" firstAttribute="top" secondItem="zV9-D9-8U2" secondAttribute="bottom" constant="30" id="ELP-Ed-IbV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MsL-cl-gFL" secondAttribute="trailing" constant="50" id="Fxr-e5-jjZ"/>
+                            <constraint firstItem="i9t-It-13E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JtG-0s-JqZ"/>
+                            <constraint firstItem="K2P-j1-mqs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="LMB-eU-7qI"/>
+                            <constraint firstItem="MsL-cl-gFL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RU4-cv-N6b"/>
+                            <constraint firstItem="i9t-It-13E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Svl-tQ-ZKM"/>
+                            <constraint firstItem="jbn-zD-Ej0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="XXf-x3-UOT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="i9t-It-13E" secondAttribute="bottom" constant="40" id="gJu-sK-Vsl"/>
+                            <constraint firstItem="zV9-D9-8U2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iXo-dK-lzZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="i9t-It-13E" secondAttribute="trailing" constant="30" id="ivu-nt-YUe"/>
+                            <constraint firstItem="jbn-zD-Ej0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mzo-lP-HAX"/>
+                            <constraint firstItem="MsL-cl-gFL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="nmm-zJ-xu2"/>
+                            <constraint firstItem="K2P-j1-mqs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o23-B4-tL6"/>
+                            <constraint firstItem="jbn-zD-Ej0" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ohV-Tu-dvf"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="ホーム" id="PCg-Fv-f5W"/>
                     <connections>
@@ -86,7 +134,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-245" y="148"/>
+            <point key="canvasLocation" x="-246.15384615384613" y="147.86729857819904"/>
         </scene>
         <!--データ-->
         <scene sceneID="kpj-Wl-Gat">
@@ -113,6 +161,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="uuC-kt-NqU">
                         <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="MisakiGothic" family="MisakiGothic" pointSize="20"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -132,6 +184,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="krH-8q-nkL">
                         <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -151,6 +204,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1ha-mH-glR">
                         <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -163,14 +217,23 @@
         </scene>
     </scenes>
     <resources>
+        <image name="background3.png" width="139.63636779785156" height="139.63636779785156"/>
         <image name="camera" catalog="system" width="128" height="94"/>
         <image name="camera.fill" catalog="system" width="128" height="94"/>
         <image name="chart.bar" catalog="system" width="128" height="90"/>
         <image name="chart.bar.fill" catalog="system" width="128" height="92"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="hukidashi3.png" width="154.90908813476562" height="58.636363983154297"/>
+        <image name="parameter2.png" width="500" height="500"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
