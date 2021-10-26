@@ -17,16 +17,9 @@ class ViewController: UIViewController {
         User1.name = "Test"//追加処理の例
         User1.total_score = 1
         
-        do{
-            let realm = try Realm()
+            let realm = try! Realm()
             try! realm.write{//データベースへの書き込み処理
                 realm.add(User1)
-            }
-        }catch{
-            print("Erro..")
-        }
     }
-
-
+    }
 }
-

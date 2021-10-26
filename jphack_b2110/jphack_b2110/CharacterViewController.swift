@@ -10,6 +10,6 @@ import RealmSwift
 
 
 class User: Object {
-    dynamic var name:String = ""
-    dynamic var total_score: Int16  = 0
+    @objc dynamic var name:String = ""
+    @objc dynamic var total_score: Int16  = 0
 }
