@@ -15,6 +15,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        
+        //hiyokoView.loadGif(name: "ikePiyo")
+        hiyokoView.loadGif(name: "pochaPiyo")
         /*
         let User1 = User()
         User1.name = "Test"//追加処理の例
@@ -23,11 +26,8 @@ class ViewController: UIViewController {
             let realm = try! Realm()
             try! realm.write{//データベースへの書き込み処理
                 realm.add(User1)
-              */
-        
-        //hiyokoView.loadGif(name: "ikePiyo")
-        hiyokoView.loadGif(name: "pochaPiyo")
-    }
+              
+    }*/
 }
 }
 
