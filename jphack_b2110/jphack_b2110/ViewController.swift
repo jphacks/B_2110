@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import RealmSwift
+//import RealmSwift
 class ViewController: UIViewController {
 
     @IBOutlet weak var hiyokoView: UIImageView!
@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        /*
         let User1 = User()
         User1.name = "Test"//追加処理の例
         User1.total_score = 1
@@ -21,8 +23,11 @@ class ViewController: UIViewController {
             let realm = try! Realm()
             try! realm.write{//データベースへの書き込み処理
                 realm.add(User1)
-              
+              */
+        
         //hiyokoView.loadGif(name: "ikePiyo")
         hiyokoView.loadGif(name: "pochaPiyo")
     }
 }
+}
+
