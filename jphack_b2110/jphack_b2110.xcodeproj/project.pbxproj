@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14103D252727F75000A47DBF /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14103D242727F75000A47DBF /* DataViewController.swift */; };
 		179DC69127250C3900F11D46 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179DC69027250C3900F11D46 /* CameraViewController.swift */; };
 		179DC7052725558400F11D46 /* CharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179DC7042725558400F11D46 /* CharacterViewController.swift */; };
 		6E086DE82723EF06007208EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E086DE72723EF06007208EB /* AppDelegate.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14103D242727F75000A47DBF /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 		179DC69027250C3900F11D46 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		179DC7042725558400F11D46 /* CharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewController.swift; sourceTree = "<group>"; };
 		6E086DE42723EF06007208EB /* jphack_b2110.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jphack_b2110.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +89,7 @@
 				6E086DE72723EF06007208EB /* AppDelegate.swift */,
 				6E086DE92723EF06007208EB /* SceneDelegate.swift */,
 				6E086DEB2723EF06007208EB /* ViewController.swift */,
+				14103D242727F75000A47DBF /* DataViewController.swift */,
 				A72D36582726D89200019A76 /* gifLoad.swift */,
 				6E086DED2723EF06007208EB /* Main.storyboard */,
 				6E086DF02723EF0A007208EB /* Assets.xcassets */,
@@ -188,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E086DEC2723EF06007208EB /* ViewController.swift in Sources */,
+				14103D252727F75000A47DBF /* DataViewController.swift in Sources */,
 				179DC7052725558400F11D46 /* CharacterViewController.swift in Sources */,
 				A72D36592726D89200019A76 /* gifLoad.swift in Sources */,
 				179DC69127250C3900F11D46 /* CameraViewController.swift in Sources */,

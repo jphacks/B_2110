@@ -99,7 +99,7 @@
                                 <rect key="frame" x="30" y="484.33333333333331" width="330" height="236.66666666666669"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="草足りない!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K2P-j1-mqs">
-                                <rect key="frame" x="140" y="158" width="110" height="20"/>
+                                <rect key="frame" x="142.33333333333334" y="158" width="105.33333333333334" height="23.333333333333343"/>
                                 <fontDescription key="fontDescription" name="MisakiGothic" family="MisakiGothic" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -139,7 +139,7 @@
         <!--データ-->
         <scene sceneID="kpj-Wl-Gat">
             <objects>
-                <viewController title="データ" id="ZI4-6F-8em" sceneMemberID="viewController">
+                <viewController title="データ" id="ZI4-6F-8em" customClass="DataViewController" customModule="jphack_b2110" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lrz-Nk-Wsl">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
