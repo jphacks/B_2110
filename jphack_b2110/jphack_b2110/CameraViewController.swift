@@ -1,15 +1,17 @@
 import UIKit
 import AVFoundation
+import CoreML
+import Vision
 
 class CameraViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupCaptureSession()
-        setupDevice()
-        setupInputOutput()
-        setupPreviewLayer()
-        captureSession.startRunning()
+       // setupCaptureSession()
+      //  setupDevice()
+      //  setupInputOutput()
+      //  setupPreviewLayer()
+      //  captureSession.startRunning()
     }
 
     // デバイスからの入力と出力を管理するオブジェクトの作成
@@ -85,6 +87,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     /// - Parameter sender: "UIImagePickerController"ボタン
 
     @IBAction func CameraBotton(_ sender: Any) {
+        // カメラで撮影した後の画像を予測に送る
     }
     
     @IBAction func Camera(_ sender: UIButton) {
@@ -104,5 +107,56 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
         // UIImagePickerController カメラが閉じる
         self.dismiss(animated: true, completion: nil)
+        photoPredict(image)
+    }
+    
+    func photoPredict(_ targetPhoto: UIImage){
+        // 学習モデルのインスタンス生成
+        guard let model = try? VNCoreMLModel(for: Food11().model) else{
+               print("error model")
+               return
+           }
+        // リクエスト
+        let request = VNCoreMLRequest(model: model){
+            request, error in
+            guard let results = request.results as? [VNClassificationObservation] else {
+                return
+            }
+            // 確率を整数にする
+            let conf = Int(results[0].confidence * 100)
+            // 候補の１番目
+            let name = results[0].identifier
+            
+            if conf >= 50{
+               // self.label.text = "\(name) です。確率は\(conf)% \n"
+            }
+            else{
+              //  self.label.text = "もしかしたら、\(name) かも。確率は\(conf)% \n"
+            }
+        }
+        
+        
+        // 画像のリサイズ
+        request.imageCropAndScaleOption = .centerCrop
+        
+        // CIImageに変換
+        guard let ciImage = CIImage(image: targetPhoto) else {
+            return
+        }
+        
+        // 画像の向き
+        let orientation = CGImagePropertyOrientation(
+            rawValue: UInt32(targetPhoto.imageOrientation.rawValue))!
+        
+        // ハンドラを実行
+        let handler = VNImageRequestHandler(
+            ciImage: ciImage, orientation: orientation)
+        
+        do{
+            try handler.perform([request])
+            
+        }catch {
+            print("error handler")
+        }
     }
 }
