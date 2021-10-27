@@ -104,6 +104,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="スコア" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbH-CX-anE">
+                                <rect key="frame" x="113" y="536" width="172" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MisakiGothic" family="MisakiGothic" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -129,6 +136,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="ホーム" id="PCg-Fv-f5W"/>
                     <connections>
+                        <outlet property="ScoreText" destination="dbH-CX-anE" id="plL-Si-3Ef"/>
                         <outlet property="hiyokoView" destination="zV9-D9-8U2" id="wRr-Rg-ebV"/>
                     </connections>
                 </viewController>
