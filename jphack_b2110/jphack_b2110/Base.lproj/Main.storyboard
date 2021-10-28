@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RQw-bR-K8j">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RQw-bR-K8j">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -160,22 +160,6 @@
             </objects>
             <point key="canvasLocation" x="-246.15384615384613" y="147.86729857819904"/>
         </scene>
-        <!--データ-->
-        <scene sceneID="kpj-Wl-Gat">
-            <objects>
-                <viewController title="データ" id="ZI4-6F-8em" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="lrz-Nk-Wsl">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="qNx-Gq-i4F"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="データ" id="2jn-GN-APi"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NnS-hC-Oqp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-203.07692307692307" y="874.4075829383886"/>
-        </scene>
         <!--ホーム-->
         <scene sceneID="60H-fZ-Aed">
             <objects>
@@ -212,12 +196,31 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="ZI4-6F-8em" kind="relationship" relationship="rootViewController" id="Jt0-TI-blP"/>
+                        <segue destination="lfI-2i-aLs" kind="relationship" relationship="rootViewController" id="4aB-cl-AHk"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8hu-Da-P3S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1132.3076923076924" y="874.4075829383886"/>
+        </scene>
+        <!--Graph View Controller-->
+        <scene sceneID="Rvy-ky-93H">
+            <objects>
+                <viewController id="lfI-2i-aLs" customClass="GraphViewController" customModule="jphack_b2110" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dh2-60-AsE" customClass="PieChartView" customModule="Charts">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="SjA-Fh-vbl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="uJB-nX-4Hk"/>
+                    <connections>
+                        <outlet property="pieGraph" destination="dh2-60-AsE" id="83E-24-nfp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ncz-7x-JYy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-256.92307692307691" y="889.33649289099526"/>
         </scene>
         <!--カメラ-->
         <scene sceneID="vED-JZ-sWk">
