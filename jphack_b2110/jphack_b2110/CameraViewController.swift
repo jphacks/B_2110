@@ -54,7 +54,7 @@ UINavigationControllerDelegate{
     func photoPredict(_ targetPhoto: UIImage){
         
         // 学習モデルのインスタンス生成
-        guard let model = try? VNCoreMLModel(for: Resnet50().model) else{
+        guard let model = try? VNCoreMLModel(for: efficientnetb2_Keras_7().model) else{
             print("error model")
             return
         }
@@ -62,28 +62,28 @@ UINavigationControllerDelegate{
         // リクエスト
         let request = VNCoreMLRequest(model: model){
             request, error in
-            guard let results = request.results as? [VNClassificationObservation] else {
+            guard let results = request.results else {
+                print("results error")
                 return
             }
             // 確率を整数にする
-            let conf = Int(results[0].confidence * 100)
+            for i in 0...3{
+                let classifications = results[i]
+                print(classifications)
+            }
+            //let classifications = results[0]
             // 候補の１番目
-            let name = results[0].identifier
-            
-            if conf >= 50{
-                self.label.text = "\(name) です。確率は\(conf)% \n"
-            }
-            else{
-                self.label.text = "もしかしたら、\(name) かも。確率は\(conf)% \n"
-            }
+            //let name = results[0].identifier
+            //print(classifications)
+            //self.label.text = "確率は\(classifications)\n"
         }
         
         
         // 画像のリサイズ
         request.imageCropAndScaleOption = .centerCrop
-        
         // CIImageに変換
         guard let ciImage = CIImage(image: targetPhoto) else {
+            print("ciImage error")
             return
         }
         

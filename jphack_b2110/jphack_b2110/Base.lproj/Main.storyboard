@@ -119,7 +119,7 @@
                                     <constraint firstAttribute="height" constant="71.670000000000002" id="31l-9H-dq9"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="parameter2.png" translatesAutoresizingMaskIntoConstraints="NO" id="i9t-It-13E">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="box.png" translatesAutoresizingMaskIntoConstraints="NO" id="i9t-It-13E">
                                 <rect key="frame" x="30" y="484.33333333333331" width="330" height="236.66666666666669"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="草足りない!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K2P-j1-mqs">
@@ -242,6 +242,7 @@
     </scenes>
     <resources>
         <image name="background3.png" width="139.63636779785156" height="139.63636779785156"/>
+        <image name="box.png" width="500" height="500"/>
         <image name="camera" catalog="system" width="128" height="94"/>
         <image name="camera.fill" catalog="system" width="128" height="94"/>
         <image name="chart.bar" catalog="system" width="128" height="90"/>
@@ -249,7 +250,6 @@
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="hukidashi3.png" width="154.90908813476562" height="58.636363983154297"/>
-        <image name="parameter2.png" width="500" height="500"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
