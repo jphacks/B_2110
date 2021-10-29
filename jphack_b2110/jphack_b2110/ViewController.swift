@@ -10,14 +10,13 @@ import RealmSwift
 class ViewController: UIViewController {
 
     @IBOutlet weak var hiyokoView: UIImageView!
-    
+    var a = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
         
         //hiyokoView.loadGif(name: "ikePiyo")
-        hiyokoView.loadGif(name: "pochaPiyo")
         
         let User1 = User()
         
@@ -33,6 +32,13 @@ class ViewController: UIViewController {
                 realm.add(User1)
               
     }
+        if (a  == 1){
+            hiyokoView.loadGif(name: "pochaPiyo")
+        } else if (a == 0){
+            hiyokoView.loadGif(name: "yasePiyo")
+        }else{
+            
+        }
 }
 }
 
