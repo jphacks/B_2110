@@ -8,6 +8,7 @@
 import UIKit
 import Foundation
 import Charts
+import RealmSwift
 class GraphViewController: UIViewController {
     
    
@@ -22,6 +23,14 @@ class GraphViewController: UIViewController {
         
         override func viewDidLoad() {
             super.viewDidLoad()
+            // (1)Realmのインスタンスを生成する
+            let realm = try! Realm()
+
+            // (2)全データの取得
+            let results = realm.objects(User.self)
+
+            // (3)取得データの確認
+            print(results)
             //pieGraph.
             setPieCht()
             
