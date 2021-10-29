@@ -13,6 +13,12 @@ UINavigationControllerDelegate{
         super.viewDidLoad()
     }
     
+    
+    override func viewWillAppear(_ animated: Bool) {//画面に遷移したときに実行される。
+        super.viewWillAppear(animated)
+        print("viewWillAppear")
+    }
+    
     // カメラの撮影開始
     @IBAction func startCamera(_ sender : Any) {
         

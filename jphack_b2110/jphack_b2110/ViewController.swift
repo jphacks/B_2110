@@ -40,5 +40,12 @@ class ViewController: UIViewController {
             
         }
 }
+    
+    override func viewWillAppear(_ animated: Bool) {//画面に遷移したときに実行される。
+        super.viewWillAppear(animated)
+        print("viewWillAppear")
+    }
+    
+    
 }
 
