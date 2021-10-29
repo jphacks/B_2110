@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RQw-bR-K8j">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RQw-bR-K8j">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -214,8 +214,8 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="background3.png" translatesAutoresizingMaskIntoConstraints="NO" id="X3P-VW-elj">
                                 <rect key="frame" x="0.0" y="88" width="390" height="673"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ekT-hX-bTx" customClass="PieChartView" customModule="Charts">
-                                <rect key="frame" x="26" y="0.0" width="338" height="761"/>
+                            <view contentMode="scaleAspectFit" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="haM-Hc-ufu" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="16" y="119" width="358" height="617"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                         </subviews>
@@ -223,28 +223,23 @@
                         <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="X3P-VW-elj" firstAttribute="leading" secondItem="SjA-Fh-vbl" secondAttribute="leading" id="2HD-Gl-iWF"/>
-                            <constraint firstItem="ekT-hX-bTx" firstAttribute="centerX" secondItem="X3P-VW-elj" secondAttribute="centerX" id="BmW-6M-7xP"/>
-                            <constraint firstItem="SjA-Fh-vbl" firstAttribute="bottom" secondItem="ekT-hX-bTx" secondAttribute="bottom" id="EVR-iF-S7K"/>
+                            <constraint firstItem="haM-Hc-ufu" firstAttribute="top" secondItem="SjA-Fh-vbl" secondAttribute="top" constant="101" id="BrS-gw-jqc"/>
+                            <constraint firstItem="haM-Hc-ufu" firstAttribute="centerX" secondItem="dh2-60-AsE" secondAttribute="centerX" id="DbR-VN-YSq"/>
+                            <constraint firstItem="haM-Hc-ufu" firstAttribute="leading" secondItem="dh2-60-AsE" secondAttribute="leadingMargin" id="GSa-VU-dby"/>
                             <constraint firstItem="X3P-VW-elj" firstAttribute="leading" secondItem="SjA-Fh-vbl" secondAttribute="leading" id="Jbg-QW-vKE"/>
                             <constraint firstItem="X3P-VW-elj" firstAttribute="bottom" secondItem="SjA-Fh-vbl" secondAttribute="bottom" id="SOG-VX-TUT"/>
-                            <constraint firstItem="ekT-hX-bTx" firstAttribute="top" secondItem="X3P-VW-elj" secondAttribute="top" id="Tbd-Fr-4p2"/>
-                            <constraint firstItem="ekT-hX-bTx" firstAttribute="leading" secondItem="SjA-Fh-vbl" secondAttribute="leading" id="Vft-8c-T4B"/>
                             <constraint firstItem="X3P-VW-elj" firstAttribute="top" secondItem="dh2-60-AsE" secondAttribute="top" id="Xut-WP-7UH"/>
                             <constraint firstItem="SjA-Fh-vbl" firstAttribute="bottom" secondItem="X3P-VW-elj" secondAttribute="bottom" id="aIb-Ff-Zc3"/>
-                            <constraint firstItem="ekT-hX-bTx" firstAttribute="top" secondItem="dh2-60-AsE" secondAttribute="top" id="cSY-6O-Oqt"/>
+                            <constraint firstItem="haM-Hc-ufu" firstAttribute="centerX" secondItem="dh2-60-AsE" secondAttribute="centerX" id="bjz-U8-ccV"/>
                             <constraint firstItem="X3P-VW-elj" firstAttribute="top" secondItem="dh2-60-AsE" secondAttribute="top" id="eVS-x9-NLH"/>
-                            <constraint firstItem="ekT-hX-bTx" firstAttribute="centerX" secondItem="dh2-60-AsE" secondAttribute="centerX" id="gc3-Fn-d1S"/>
-                            <constraint firstItem="ekT-hX-bTx" firstAttribute="top" secondItem="dh2-60-AsE" secondAttribute="top" id="jPN-VP-UHh"/>
                             <constraint firstItem="X3P-VW-elj" firstAttribute="trailing" secondItem="SjA-Fh-vbl" secondAttribute="trailing" id="lSi-wl-GBd"/>
-                            <constraint firstItem="ekT-hX-bTx" firstAttribute="leading" secondItem="SjA-Fh-vbl" secondAttribute="leading" constant="26" id="oXH-ja-8hP"/>
+                            <constraint firstItem="haM-Hc-ufu" firstAttribute="centerY" secondItem="dh2-60-AsE" secondAttribute="centerY" id="oZn-c4-AHC"/>
                             <constraint firstItem="X3P-VW-elj" firstAttribute="trailing" secondItem="SjA-Fh-vbl" secondAttribute="trailing" id="pg7-Tf-WsT"/>
-                            <constraint firstItem="SjA-Fh-vbl" firstAttribute="trailing" secondItem="ekT-hX-bTx" secondAttribute="trailing" id="sNg-0M-UWO"/>
-                            <constraint firstItem="ekT-hX-bTx" firstAttribute="bottom" secondItem="SjA-Fh-vbl" secondAttribute="bottom" id="vlY-fN-U54"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="データ" id="uJB-nX-4Hk"/>
                     <connections>
-                        <outlet property="pieGraph" destination="ekT-hX-bTx" id="Zql-lF-Tu5"/>
+                        <outlet property="linechart" destination="haM-Hc-ufu" id="WIY-qA-Jca"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ncz-7x-JYy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
