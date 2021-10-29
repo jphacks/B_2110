@@ -12,18 +12,21 @@ class GraphViewController: UIViewController {
     
    
 
+
     @IBOutlet var pieGraph: PieChartView!
-    // @IBOutlet weak var pieGraph: PieChartView!
+    
+    
     let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun"]
         let unitsSold = [10.0, 4.0, 6.0, 3.0, 12.0, 16.0]
         
         override func viewDidLoad() {
             super.viewDidLoad()
-        setPieCht()
+            
+            setPieCht()
+            
         }
         
-        
-        func setPieCht(){
+    func setPieCht(){
             
             var dataEntries: [ChartDataEntry] = []
      
@@ -50,6 +53,3 @@ class GraphViewController: UIViewController {
         }
         
     }
-    
-    
-
