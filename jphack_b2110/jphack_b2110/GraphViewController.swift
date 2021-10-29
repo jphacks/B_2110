@@ -35,7 +35,15 @@ class GraphViewController: UIViewController {
         
                     
         linechart.data = LineChartData(dataSet: dataset)
-        linechart.chartDescription?.text = "Item Sold Chart"
+        dataset.circleColors = [UIColor.gray]
+        dataset.lineWidth = 5
+        //linechart.chartDescription?.text = "Item Sold Chart"
         linechart.borderLineWidth = 20.0
+        linechart.backgroundColor = UIColor.white
+        linechart.leftAxis.drawAxisLineEnabled = false
+        // 右側のY座標軸は非表示にする
+        linechart.rightAxis.enabled = false
+
+        
     }
 }
