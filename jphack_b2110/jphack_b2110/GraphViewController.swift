@@ -15,8 +15,8 @@ class GraphViewController: UIViewController {
     
     @IBOutlet var linechart: LineChartView!
     
-    let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun"]
-    let unitsSold = [10.0, 4.0, 6.0, 3.0, 12.0, 80.0]
+    //let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun"]
+    let unitsSold = [10.0, 4.0, 6.0, 3.0, 12.0, 80.0, 50.0]
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,9 +31,11 @@ class GraphViewController: UIViewController {
             entry.append(ChartDataEntry(x: Double(i),y: d))
         }
             
-        let dataset = LineChartDataSet(entries: entry,label: "Units Sold")
+        let dataset = LineChartDataSet(entries: entry,label: "栄養素")
+        
                     
         linechart.data = LineChartData(dataSet: dataset)
         linechart.chartDescription?.text = "Item Sold Chart"
+        linechart.borderLineWidth = 20.0
     }
 }
