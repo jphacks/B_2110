@@ -6,3 +6,11 @@
 //
 
 import Foundation
+//import RealmSwift
+
+/*
+class User: Object {
+    @objc dynamic var name:String = ""
+    @objc dynamic var total_score: Int16  = 0
+}
+*/
