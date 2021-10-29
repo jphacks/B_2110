@@ -16,7 +16,16 @@ UINavigationControllerDelegate{
     
     override func viewWillAppear(_ animated: Bool) {//画面に遷移したときに実行される。
         super.viewWillAppear(animated)
-        print("viewWillAppear")
+        //時刻の取得
+        let now = Date()
+        print(now)
+        //=> 2016-11-23 23:33:20 +0000
+        //現在日時から時分だけ取り出す(24時間制で分単位)
+        let minutes = Int(now.timeIntervalSince1970) % (24*60*60) / 60
+        print(now.timeIntervalSince1970)
+        //時分を抽出
+        print("hour =", minutes/60)
+        print("minute =", minutes%60)
     }
     
     // カメラの撮影開始
