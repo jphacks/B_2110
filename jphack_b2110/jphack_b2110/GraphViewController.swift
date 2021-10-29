@@ -31,6 +31,7 @@ class GraphViewController: UIViewController {
 
             // (3)取得データの確認
             print(results)
+            print(results[0].total_score)
             //pieGraph.
             setPieCht()
             
