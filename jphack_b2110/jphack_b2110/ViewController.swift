@@ -23,6 +23,10 @@ class ViewController: UIViewController {
         
         User1.name = "Test"//追加処理の例
         User1.total_score = 1
+        User1.nf_calories = 1.0
+        User1.nf_calories_from_fat = 1.0
+        User1.nf_total_fat = 1.0
+        User1.nf_saturated_fat = 1.0
         
             let realm = try! Realm()
             try! realm.write{//データベースへの書き込み処理
