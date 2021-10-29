@@ -32,6 +32,7 @@ class ViewController: UIViewController {
                 realm.add(User1)
               
     }
+        
         if (a  == 1){
             hiyokoView.loadGif(name: "pochaPiyo")
         } else if (a == 0){
