@@ -48,7 +48,8 @@ class GraphViewController: UIViewController {
 
         
         for i in 0 ..< Foods.count {
-            AllSome += Foods[i].calories + Foods[i].fat + Foods[i].carbohydrate + Foods[i].protein + Foods[i].vitamin
+            //AllSome = 0
+            AllSome = Foods[i].calories + Foods[i].fat + Foods[i].carbohydrate + Foods[i].protein + Foods[i].vitamin
             unitsSold.append(Int(AllSome))
         }
         
