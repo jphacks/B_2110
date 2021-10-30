@@ -55,7 +55,7 @@
 * Realmswift
 
 #### デバイス
-* iphone
+* iPhone8
 * 
 
 ### 独自技術
