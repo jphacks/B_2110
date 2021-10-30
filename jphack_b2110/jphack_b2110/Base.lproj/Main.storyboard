@@ -180,20 +180,33 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ビタミン" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="74v-U6-DmY">
+                                <rect key="frame" x="50" y="509.33333333333331" width="290" height="181.66666666666669"/>
+                                <fontDescription key="fontDescription" name="MisakiGothic" family="MisakiGothic" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="74v-U6-DmY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="0tR-yo-VQ2"/>
                             <constraint firstItem="MsL-cl-gFL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="7je-o6-0PX"/>
                             <constraint firstItem="zV9-D9-8U2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-60" id="8aw-F8-sGv"/>
                             <constraint firstItem="jbn-zD-Ej0" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="9LX-nx-hkU"/>
+                            <constraint firstItem="74v-U6-DmY" firstAttribute="top" secondItem="zV9-D9-8U2" secondAttribute="bottom" id="EHv-Qc-8jt"/>
                             <constraint firstItem="i9t-It-13E" firstAttribute="top" secondItem="zV9-D9-8U2" secondAttribute="bottom" constant="30" id="ELP-Ed-IbV"/>
+                            <constraint firstItem="74v-U6-DmY" firstAttribute="top" secondItem="zV9-D9-8U2" secondAttribute="bottom" constant="55" id="FKn-bE-BhQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MsL-cl-gFL" secondAttribute="trailing" constant="50" id="Fxr-e5-jjZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="74v-U6-DmY" secondAttribute="bottom" constant="70" id="G9I-PE-da8"/>
                             <constraint firstItem="i9t-It-13E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JtG-0s-JqZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="74v-U6-DmY" secondAttribute="bottom" id="K2W-QQ-c4g"/>
                             <constraint firstItem="K2P-j1-mqs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="LMB-eU-7qI"/>
                             <constraint firstItem="MsL-cl-gFL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RU4-cv-N6b"/>
                             <constraint firstItem="i9t-It-13E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Svl-tQ-ZKM"/>
                             <constraint firstItem="jbn-zD-Ej0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="XXf-x3-UOT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="74v-U6-DmY" secondAttribute="trailing" constant="50" id="dQO-bt-tA5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="74v-U6-DmY" secondAttribute="trailing" id="fhO-hJ-XI0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="i9t-It-13E" secondAttribute="bottom" constant="40" id="gJu-sK-Vsl"/>
                             <constraint firstItem="zV9-D9-8U2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iXo-dK-lzZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="i9t-It-13E" secondAttribute="trailing" constant="30" id="ivu-nt-YUe"/>
@@ -201,10 +214,12 @@
                             <constraint firstItem="MsL-cl-gFL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="nmm-zJ-xu2"/>
                             <constraint firstItem="K2P-j1-mqs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o23-B4-tL6"/>
                             <constraint firstItem="jbn-zD-Ej0" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ohV-Tu-dvf"/>
+                            <constraint firstItem="74v-U6-DmY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xcx-yB-UsD"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="ホーム" id="PCg-Fv-f5W"/>
                     <connections>
+                        <outlet property="hiyokoTalkText" destination="K2P-j1-mqs" id="qP5-T4-SvU"/>
                         <outlet property="hiyokoView" destination="zV9-D9-8U2" id="wRr-Rg-ebV"/>
                     </connections>
                 </viewController>
