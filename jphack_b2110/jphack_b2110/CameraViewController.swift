@@ -41,7 +41,8 @@ UINavigationControllerDelegate{
         print("minute =", minutes%60)
         
         
-        //一旦生成
+        //一旦生成\
+        /*
         let food = Food()
         food.calories = 1
         food.fat = 1
@@ -54,6 +55,7 @@ UINavigationControllerDelegate{
             realm.add(food)
             
         }
+        */
     }
     
     // カメラの撮影開始
