@@ -14,28 +14,55 @@ class GraphViewController: UIViewController {
 
     
     @IBOutlet var linechart: LineChartView!
+
     //let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun"]
-    let unitsSold = [10.0, 4.0, 6.0, 3.0, 12.0, 80.0, 50.0, 90.0]
+   // let unitsSold = [10.0, 4.0, 6.0, 3.0, 12.0, 80.0, 50.0, 90.0]
+
+    
+    let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun"]
+    
+    var unitsSold = [Int]()
+    
         
     override func viewDidLoad() {
 
         super.viewDidLoad()
+
         self.view.addBackground(name:"background3.png")
-        setLineGraph()
+
+        unitsSold.append(0)
+      //  setLineGraph()
         //self.view.addSubview(linechart)
     }
 
     func setLineGraph(){
+        
+        // (1)Realmのインスタンスを生成する
+        let realm = try! Realm()
+        // (2)全データの取得
+        let Foods = realm.objects(Food.self)
+        // (3)取得データの確認
+       // print(Food)
+        
+        var AllSome : Float = 0
+
+        
+        for i in 0 ..< Foods.count {
+            AllSome += Foods[i].calories + Foods[i].fat + Foods[i].carbohydrate + Foods[i].protein + Foods[i].vitamin
+            unitsSold.append(Int(AllSome))
+        }
+        
+        
+        
         var entry = [ChartDataEntry]()
             
         for (i,d) in unitsSold.enumerated(){
-            entry.append(ChartDataEntry(x: Double(i),y: d))
+            entry.append(ChartDataEntry(x: Double(i),y: Double(d)))
         }
             
         let dataset = LineChartDataSet(entries: entry, label: "栄養素")
         linechart.data = LineChartData(dataSet: dataset)
-        
-        
+             
         // X軸のラベルの位置を下に設定
         linechart.xAxis.labelPosition = .bottom
         // X軸のラベルの色を設定
@@ -61,6 +88,9 @@ class GraphViewController: UIViewController {
         //グラフのアニメーション(秒数で設定)
         linechart.animate(xAxisDuration: 3.0, yAxisDuration: 3.0, easingOption: .easeInOutElastic)
         
+
+        linechart.chartDescription?.text = "栄養のグラフ"
+
     }
     
 }

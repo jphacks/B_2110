@@ -1,0 +1,18 @@
+{
+  "Outputs" : {
+    "classLabel" : {
+      "MLFeatureShortDescription" : ""
+    },
+    "Identity" : {
+      "MLFeatureShortDescription" : ""
+    }
+  },
+  "Inputs" : {
+    "keras_layer_1_input" : {
+      "MLFeatureShortDescription" : ""
+    }
+  },
+  "TrainingInputs" : {
+
+  }
+}
