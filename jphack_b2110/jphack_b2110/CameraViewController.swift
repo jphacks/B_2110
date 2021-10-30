@@ -28,6 +28,7 @@ UINavigationControllerDelegate{
     override func viewWillAppear(_ animated: Bool) {//画面に遷移したときに実行される。
         super.viewWillAppear(animated)
         
+        
         //時刻の取得
         let now = Date()
         print(now)
@@ -38,6 +39,21 @@ UINavigationControllerDelegate{
         //時分を抽出
         print("hour =", minutes/60)
         print("minute =", minutes%60)
+        
+        
+        //一旦生成
+        let food = Food()
+        food.calories = 1
+        food.fat = 1
+        food.carbohydrate = 1
+        food.protein = 1
+        food.vitamin = 1
+        
+        let realm = try! Realm()
+        try! realm.write{//データベースへの書き込み処理
+            realm.add(food)
+            
+        }
     }
     
     // カメラの撮影開始
