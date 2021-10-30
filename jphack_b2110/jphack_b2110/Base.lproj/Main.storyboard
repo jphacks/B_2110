@@ -175,7 +175,7 @@
                                 <rect key="frame" x="30" y="484.33333333333331" width="330" height="236.66666666666669"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="草足りない!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K2P-j1-mqs">
-                                <rect key="frame" x="140" y="158" width="110" height="20"/>
+                                <rect key="frame" x="142.33333333333334" y="158" width="105.33333333333334" height="23.333333333333343"/>
                                 <fontDescription key="fontDescription" name="MisakiGothic" family="MisakiGothic" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -211,6 +211,7 @@
                             <constraint firstItem="MsL-cl-gFL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="nmm-zJ-xu2"/>
                             <constraint firstItem="K2P-j1-mqs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o23-B4-tL6"/>
                             <constraint firstItem="jbn-zD-Ej0" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ohV-Tu-dvf"/>
+                            <constraint firstItem="MsL-cl-gFL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uAR-f5-APi"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="ホーム" id="PCg-Fv-f5W"/>
@@ -275,30 +276,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="background3.png" translatesAutoresizingMaskIntoConstraints="NO" id="X3P-VW-elj">
-                                <rect key="frame" x="0.0" y="88" width="390" height="673"/>
-                            </imageView>
-                            <view contentMode="scaleAspectFit" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="haM-Hc-ufu" customClass="LineChartView" customModule="Charts">
-                                <rect key="frame" x="16" y="119" width="358" height="617"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="haM-Hc-ufu" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="16" y="189" width="358" height="466"/>
+                                <viewLayoutGuide key="safeArea" id="mnQ-yf-rtY"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SjA-Fh-vbl"/>
-                        <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
-                            <constraint firstItem="X3P-VW-elj" firstAttribute="leading" secondItem="SjA-Fh-vbl" secondAttribute="leading" id="2HD-Gl-iWF"/>
                             <constraint firstItem="haM-Hc-ufu" firstAttribute="top" secondItem="SjA-Fh-vbl" secondAttribute="top" constant="101" id="BrS-gw-jqc"/>
                             <constraint firstItem="haM-Hc-ufu" firstAttribute="centerX" secondItem="dh2-60-AsE" secondAttribute="centerX" id="DbR-VN-YSq"/>
                             <constraint firstItem="haM-Hc-ufu" firstAttribute="leading" secondItem="dh2-60-AsE" secondAttribute="leadingMargin" id="GSa-VU-dby"/>
-                            <constraint firstItem="X3P-VW-elj" firstAttribute="leading" secondItem="SjA-Fh-vbl" secondAttribute="leading" id="Jbg-QW-vKE"/>
-                            <constraint firstItem="X3P-VW-elj" firstAttribute="bottom" secondItem="SjA-Fh-vbl" secondAttribute="bottom" id="SOG-VX-TUT"/>
-                            <constraint firstItem="X3P-VW-elj" firstAttribute="top" secondItem="dh2-60-AsE" secondAttribute="top" id="Xut-WP-7UH"/>
-                            <constraint firstItem="SjA-Fh-vbl" firstAttribute="bottom" secondItem="X3P-VW-elj" secondAttribute="bottom" id="aIb-Ff-Zc3"/>
                             <constraint firstItem="haM-Hc-ufu" firstAttribute="centerX" secondItem="dh2-60-AsE" secondAttribute="centerX" id="bjz-U8-ccV"/>
-                            <constraint firstItem="X3P-VW-elj" firstAttribute="top" secondItem="dh2-60-AsE" secondAttribute="top" id="eVS-x9-NLH"/>
-                            <constraint firstItem="X3P-VW-elj" firstAttribute="trailing" secondItem="SjA-Fh-vbl" secondAttribute="trailing" id="lSi-wl-GBd"/>
                             <constraint firstItem="haM-Hc-ufu" firstAttribute="centerY" secondItem="dh2-60-AsE" secondAttribute="centerY" id="oZn-c4-AHC"/>
-                            <constraint firstItem="X3P-VW-elj" firstAttribute="trailing" secondItem="SjA-Fh-vbl" secondAttribute="trailing" id="pg7-Tf-WsT"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="データ" id="uJB-nX-4Hk"/>
@@ -341,9 +333,6 @@
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="hukidashi3.png" width="154.90908813476562" height="58.636363983154297"/>
-        <systemColor name="secondarySystemGroupedBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
