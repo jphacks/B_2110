@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var hiyokoTalkText: UILabel!
     @IBOutlet weak var hiyokoView: UIImageView!
     
+    @IBOutlet weak var AverageText: UILabel!
     
     var a = 0
     override func viewDidLoad() {
@@ -24,6 +25,7 @@ class ViewController: UIViewController {
         super.viewWillAppear(animated)
         print("viewWillAppear")
         BirdStateCheck()
+        //Eat_Average()
 
    }
     
@@ -39,7 +41,7 @@ class ViewController: UIViewController {
             print(Foods.count)
             
             //直前の数値から状態を決定する。
-            let bird_status : Float = Foods[Foods.count].calories + Foods[Foods.count].fat + Foods[Foods.count].carbohydrate + Foods[Foods.count].protein + Foods[Foods.count].vitamin
+            let bird_status : Float = Foods[Foods.count - 1].calories + Foods[Foods.count-1].fat + Foods[Foods.count - 1].carbohydrate + Foods[Foods.count - 1].protein + Foods[Foods.count].vitamin
             
             
             if ( bird_status > 100){
@@ -56,6 +58,35 @@ class ViewController: UIViewController {
             hiyokoView.loadGif(name: "yasePiyo")
             hiyokoTalkText.text = "おなかすいた！"
         }
+    }
+    
+    
+    func Eat_Average(){
+        //全ての結果から平均値を出す
+        let realm = try! Realm()
+        let Foods = realm.objects(Food.self)
+        
+        var AllCalories : Float = 0
+        var AllFat : Float = 0
+        var AllCarbohydrate : Float = 0
+        var AllProtein : Float = 0
+        var AllVitamin: Float = 0
+        
+        for i in 0 ..< Foods.count {
+            AllCalories += Foods[i].calories
+            AllFat += Foods[i].fat
+            AllCarbohydrate += Foods[i].carbohydrate
+            AllProtein += Foods[i].protein
+            AllVitamin  += Foods[i].vitamin
+        }
+        
+        var AverageCalories = Int(AllCalories) / Foods.count
+        var AverageFat = Int(AllFat) / Foods.count
+        var AverageProtein = Int(AllProtein) / Foods.count
+        var AverageVitamin = Int(AllVitamin) / Foods.count
+        
+        
+    //    AverageText.text = "平均値\nビタミン " + AverageCalories + "\n脂質 " + AverageFat + "\nプロテイン " + AverageProtein + "\nビタミン " + AverageVitamin
     }
 }
 

@@ -114,7 +114,7 @@ UINavigationControllerDelegate{
                 if (i%2 == 0){
                     let nutrition = n.components(separatedBy: ",")
                     var predNutrition :Float = 0.0
-                    for r in results[0...10]{
+                    for r in results{
                         let conf = r.confidence
                         let ndx:Int = Int(r.identifier) ?? 0
                         predNutrition += conf*(Float(nutrition[ndx]) ?? 0)
