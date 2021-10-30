@@ -38,21 +38,35 @@ class ViewController: UIViewController {
        // print(Food)
         if (Foods.count > 0){
             // 取得件数の表示
-            print(Foods.count)
-            
+            print(Foods[0].date)
+            let date2 = Date()
+            print(date2)
+            print(date2.timeIntervalSince(Foods[Foods.count - 1 ].date))
             //直前の数値から状態を決定する。
             let bird_status : Float = Foods[Foods.count - 1].calories + Foods[Foods.count-1].fat + Foods[Foods.count - 1].carbohydrate + Foods[Foods.count - 1].protein + Foods[Foods.count-1].vitamin
             
-            
-            if ( bird_status > 230){
-                hiyokoView.loadGif(name: "pochaPiyo")
-                hiyokoTalkText.text = "おなかいっぱい！"
-            } else if (bird_status > 210){
-                hiyokoView.loadGif(name: "ikePiyo")
-                hiyokoTalkText.text = "満足！"
+            if ( 60*60*4  > date2.timeIntervalSince(Foods[0].date)){
+                if ( bird_status > 230){
+                    hiyokoView.loadGif(name: "pochaPiyo")
+                    hiyokoTalkText.text = "おなかいっぱい！"
+                } else if (bird_status > 210){
+                    hiyokoView.loadGif(name: "ikePiyo")
+                    hiyokoTalkText.text = "満足！"
+                }else{
+                    hiyokoView.loadGif(name: "yasePiyo")
+                    hiyokoTalkText.text = "草足りない!"
+                }
+            }else if (60*60*8 > date2.timeIntervalSince(Foods[0].date)){
+                if ( bird_status > 150){
+                    hiyokoView.loadGif(name: "ikePiyo")
+                    hiyokoTalkText.text = "満足！"
+                }else{
+                    hiyokoView.loadGif(name: "yasePiyo")
+                    hiyokoTalkText.text = "お腹すいた!"
+                }
             }else{
                 hiyokoView.loadGif(name: "yasePiyo")
-                hiyokoTalkText.text = "草足りない!"
+                hiyokoTalkText.text = "おなかすいた！"
             }
         }else{
             hiyokoView.loadGif(name: "yasePiyo")
