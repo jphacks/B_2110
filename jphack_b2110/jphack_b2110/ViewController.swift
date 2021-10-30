@@ -44,10 +44,10 @@ class ViewController: UIViewController {
             let bird_status : Float = Foods[Foods.count - 1].calories + Foods[Foods.count-1].fat + Foods[Foods.count - 1].carbohydrate + Foods[Foods.count - 1].protein + Foods[Foods.count].vitamin
             
             
-            if ( bird_status > 100){
+            if ( bird_status > 230){
                 hiyokoView.loadGif(name: "pochaPiyo")
                 hiyokoTalkText.text = "おなかいっぱい！"
-            } else if (bird_status > 50){
+            } else if (bird_status > 210){
                 hiyokoView.loadGif(name: "ikePiyo")
                 hiyokoTalkText.text = "満足！"
             }else{
