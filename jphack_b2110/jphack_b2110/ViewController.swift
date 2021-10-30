@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         super.viewWillAppear(animated)
         print("viewWillAppear")
         BirdStateCheck()
-        //Eat_Average()
+        Eat_Average()
 
    }
     
@@ -79,14 +79,30 @@ class ViewController: UIViewController {
             AllProtein += Foods[i].protein
             AllVitamin  += Foods[i].vitamin
         }
+        if (Foods.count > 0){
+            var AverageCalories = Int(AllCalories) / Foods.count
+            var AverageFat = Int(AllFat) / Foods.count
+            var AverageProtein = Int(AllProtein) / Foods.count
+            var AverageVitamin = Int(AllVitamin) / Foods.count
+            
+            AverageText.text = "平均カロリー：\(AverageCalories)kca\n"
+        }else{
+            var AverageCalories = 0
+            var AverageFat = 0
+            var AverageProtein = 0
+            var AverageVitamin = 0
+            
+          
+            
+            
+            AverageText.text = "平均カロリー：\(AverageCalories)kcal\n"
+            
+            
+        }
         
-        var AverageCalories = Int(AllCalories) / Foods.count
-        var AverageFat = Int(AllFat) / Foods.count
-        var AverageProtein = Int(AllProtein) / Foods.count
-        var AverageVitamin = Int(AllVitamin) / Foods.count
+       // AverageText.text = "平均値\nビタミン " + AverageCalories + "\n脂質 " + AverageFat + "\nプロテイン " + AverageProtein + "\nビタミン " + AverageVitamin
+       
         
-        
-    //    AverageText.text = "平均値\nビタミン " + AverageCalories + "\n脂質 " + AverageFat + "\nプロテイン " + AverageProtein + "\nビタミン " + AverageVitamin
     }
 }
 
