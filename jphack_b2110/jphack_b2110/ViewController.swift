@@ -41,7 +41,7 @@ class ViewController: UIViewController {
             print(Foods[0].date)
             let date2 = Date()
             print(date2)
-            print(date2.timeIntervalSince(Foods[0].date))
+            print(date2.timeIntervalSince(Foods[Foods.count - 1 ].date))
             //直前の数値から状態を決定する。
             let bird_status : Float = Foods[Foods.count - 1].calories + Foods[Foods.count-1].fat + Foods[Foods.count - 1].carbohydrate + Foods[Foods.count - 1].protein + Foods[Foods.count-1].vitamin
             
