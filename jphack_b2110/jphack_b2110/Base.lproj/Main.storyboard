@@ -175,7 +175,7 @@
                                 <rect key="frame" x="30" y="484.33333333333331" width="330" height="236.66666666666669"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="草足りない!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K2P-j1-mqs">
-                                <rect key="frame" x="142.33333333333334" y="158" width="105.33333333333334" height="23.333333333333343"/>
+                                <rect key="frame" x="140" y="158" width="110" height="20"/>
                                 <fontDescription key="fontDescription" name="MisakiGothic" family="MisakiGothic" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -286,9 +286,11 @@
                         <viewLayoutGuide key="safeArea" id="SjA-Fh-vbl"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
+                            <constraint firstItem="haM-Hc-ufu" firstAttribute="centerY" secondItem="dh2-60-AsE" secondAttribute="centerY" id="4Dk-zL-iO7"/>
                             <constraint firstItem="haM-Hc-ufu" firstAttribute="top" secondItem="SjA-Fh-vbl" secondAttribute="top" constant="101" id="BrS-gw-jqc"/>
                             <constraint firstItem="haM-Hc-ufu" firstAttribute="centerX" secondItem="dh2-60-AsE" secondAttribute="centerX" id="DbR-VN-YSq"/>
                             <constraint firstItem="haM-Hc-ufu" firstAttribute="leading" secondItem="dh2-60-AsE" secondAttribute="leadingMargin" id="GSa-VU-dby"/>
+                            <constraint firstItem="haM-Hc-ufu" firstAttribute="centerX" secondItem="dh2-60-AsE" secondAttribute="centerX" id="Hpw-nA-bhU"/>
                             <constraint firstItem="haM-Hc-ufu" firstAttribute="centerX" secondItem="dh2-60-AsE" secondAttribute="centerX" id="bjz-U8-ccV"/>
                             <constraint firstItem="haM-Hc-ufu" firstAttribute="centerY" secondItem="dh2-60-AsE" secondAttribute="centerY" id="oZn-c4-AHC"/>
                         </constraints>

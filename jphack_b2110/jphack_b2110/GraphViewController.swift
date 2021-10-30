@@ -28,10 +28,10 @@ class GraphViewController: UIViewController {
 
         super.viewDidLoad()
 
-        self.view.addBackground(name:"background3.png")
+       // self.view.addBackground(name:"background3.png")
 
         unitsSold.append(0)
-      //  setLineGraph()
+       setLineGraph()
         //self.view.addSubview(linechart)
     }
 
@@ -62,7 +62,8 @@ class GraphViewController: UIViewController {
             
         let dataset = LineChartDataSet(entries: entry, label: "栄養素")
         linechart.data = LineChartData(dataSet: dataset)
-             
+            
+        /*
         // X軸のラベルの位置を下に設定
         linechart.xAxis.labelPosition = .bottom
         // X軸のラベルの色を設定
@@ -88,7 +89,7 @@ class GraphViewController: UIViewController {
         //グラフのアニメーション(秒数で設定)
         linechart.animate(xAxisDuration: 3.0, yAxisDuration: 3.0, easingOption: .easeInOutElastic)
         
-
+         */
         linechart.chartDescription?.text = "栄養のグラフ"
 
     }

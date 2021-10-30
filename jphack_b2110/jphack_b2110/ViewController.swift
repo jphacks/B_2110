@@ -41,7 +41,7 @@ class ViewController: UIViewController {
             print(Foods.count)
             
             //直前の数値から状態を決定する。
-            let bird_status : Float = Foods[Foods.count - 1].calories + Foods[Foods.count-1].fat + Foods[Foods.count - 1].carbohydrate + Foods[Foods.count - 1].protein + Foods[Foods.count].vitamin
+            let bird_status : Float = Foods[Foods.count - 1].calories + Foods[Foods.count-1].fat + Foods[Foods.count - 1].carbohydrate + Foods[Foods.count - 1].protein + Foods[Foods.count-1].vitamin
             
             
             if ( bird_status > 230){
