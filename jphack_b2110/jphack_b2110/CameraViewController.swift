@@ -102,7 +102,7 @@ UINavigationControllerDelegate{
     func photoPredict(_ targetPhoto: UIImage){
         
         // 学習モデルのインスタンス生成
-        guard let model = try? VNCoreMLModel(for: Label_suujinisita().model) else{
+        guard let model = try? VNCoreMLModel(for: Model_BGR().model) else{
             print("error model")
             return
         }

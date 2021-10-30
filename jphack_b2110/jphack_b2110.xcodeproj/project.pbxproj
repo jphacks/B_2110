@@ -33,6 +33,7 @@
 		A7B18C2B272B246C003B56B3 /* efficientnetb2_Keras_7.mlkitmodel in Sources */ = {isa = PBXBuildFile; fileRef = A7B18C2A272B2469003B56B3 /* efficientnetb2_Keras_7.mlkitmodel */; };
 		A7CCD8B9272CF1FE004BAD7E /* addBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CCD8B8272CF1FD004BAD7E /* addBackground.swift */; };
 		A7CCD8BB272CF20D004BAD7E /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CCD8BA272CF20D004BAD7E /* GraphViewController.swift */; };
+		A7CCD8BF272DD249004BAD7E /* Model_BGR.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A7CCD8BE272DD248004BAD7E /* Model_BGR.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,7 @@
 		A7B18C2A272B2469003B56B3 /* efficientnetb2_Keras_7.mlkitmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = efficientnetb2_Keras_7.mlkitmodel; sourceTree = "<group>"; };
 		A7CCD8B8272CF1FD004BAD7E /* addBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addBackground.swift; sourceTree = "<group>"; };
 		A7CCD8BA272CF20D004BAD7E /* GraphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
+		A7CCD8BE272DD248004BAD7E /* Model_BGR.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Model_BGR.mlmodel; sourceTree = "<group>"; };
 		EC97196F53E1689AAA854E97 /* Pods_jphack_b2110.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jphack_b2110.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -112,6 +114,7 @@
 				6E086DED2723EF06007208EB /* Main.storyboard */,
 				A7B18BD62728196E003B56B3 /* Resnet50.mlkitmodel */,
 				17267F75272CFC5F00AA72C0 /* Label_suujinisita.mlkitmodel */,
+				A7CCD8BE272DD248004BAD7E /* Model_BGR.mlmodel */,
 				A7B18C2A272B2469003B56B3 /* efficientnetb2_Keras_7.mlkitmodel */,
 				6E086DF02723EF0A007208EB /* Assets.xcassets */,
 				A7B18C102729A2B0003B56B3 /* box.png */,
@@ -282,6 +285,7 @@
 				A72D36592726D89200019A76 /* gifLoad.swift in Sources */,
 				17267F76272CFC5F00AA72C0 /* Label_suujinisita.mlkitmodel in Sources */,
 				179DC69127250C3900F11D46 /* CameraViewController.swift in Sources */,
+				A7CCD8BF272DD249004BAD7E /* Model_BGR.mlmodel in Sources */,
 				A7CCD8BB272CF20D004BAD7E /* GraphViewController.swift in Sources */,
 				6E086DE82723EF06007208EB /* AppDelegate.swift in Sources */,
 				6E086DEA2723EF06007208EB /* SceneDelegate.swift in Sources */,
